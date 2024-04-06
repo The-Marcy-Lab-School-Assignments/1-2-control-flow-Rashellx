@@ -36,12 +36,12 @@
       "FrScTe1": 0,
       "FrScTe2": 0,
       "FrScTe3": 0,
-      "FrScTe4": 0,
+      "FrScTe4": 1,
       "FrScTe5": 0
     },
     "Modify Tests": {
-      "MoTe1": 0,
-      "MoTe2": 0
+      "MoTe1": 1,
+      "MoTe2": 1
     },
     "Debug Tests": {
       "DeTe1": 0,
@@ -54,9 +54,9 @@
     }
   },
   "humanReadable": {
-    "From Scratch Tests": "0/5",
-    "finalTestScore": "FINAL SCORE: 0/14",
-    "Modify Tests": "0/2",
+    "From Scratch Tests": "1/5",
+    "finalTestScore": "FINAL SCORE: 3/14",
+    "Modify Tests": "2/2",
     "Debug Tests": "0/7"
   }
 }

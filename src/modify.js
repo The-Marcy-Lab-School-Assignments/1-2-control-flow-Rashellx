@@ -5,6 +5,7 @@ const wildlyBiasedReview = (location) => {
     console.log('WOW WHAT A CITY');
   } else {
     console.log('Yea that place is cool I guess');
+    return
   }
 };
 
