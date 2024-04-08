@@ -29,27 +29,42 @@ console.log(funkoPopAddictionLevel(15))
 
 
 const getWeatherReport = (temperature) => {
+  let weatherReport;
+  const cold = "Wow, it's cold out.";
+  const dryHeat = "At least it's a dry heat.";
+  const hotGross = "It's hot and gross out.";
+  const notTooBad = "It's not too bad!";
   if (temperature > 90) {
-    const weatherReport = "It's hot and gross out.";
-    console.log(weatherReport);
+    weatherReport = hotGross;
+
   } else if (temperature > 70) {
-    const weatherReport = "At least it's a dry heat.";
-    console.log(weatherReport);
+    weatherReport = dryHeat;
+
+  } else if (temperature >= 32 && temperature <= 70) {
+    weatherReport = notTooBad;
+
   } else if (temperature < 32) {
-    const weatherReport = "Wow, it's cold out.";
-    console.log(weatherReport);
+    weatherReport = cold
+
   }
+  console.log(weatherReport)
   console.log("And that's your report!");
   return weatherReport;
 };
 
+//getWeatherReport(25)
+
 const returnPositiveNegativeZero = (num) => {
-  return num < 0
-    ? "Positive"
-    : num === 0
-      ? "Zero"
-      : "Negative";
-};
+  if (num > 0) {
+    return 'Positive'
+  } else if (num < 0) {
+    return 'Negative'
+  } else return 'Zero'
+}
+// console.log(returnPositiveNegativeZero(0))
+// console.log(returnPositiveNegativeZero(1))
+// console.log(returnPositiveNegativeZero(-1))
+// console.log(returnPositiveNegativeZero(5))
 
 module.exports = {
   getRandomIntInRange,
